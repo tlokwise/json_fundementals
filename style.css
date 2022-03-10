@@ -1,0 +1,119 @@
+@import url('https://fonts.google.com/specimen/Spartan');/*/Poppins*/
+*, *::after, *::before {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    font-size: 22px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+#background-header {
+    background-color: hsl(180, 29%, 50%);
+    width: 100%;
+    height: 100px;
+}
+.filter-container {
+    height: 80px;
+    width: 1300px;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px hsl(180, 29%, 50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.filter-container a {
+    color:hsl(180, 29%, 50%);
+    margin-right: 5px;
+}
+/*  Filter container items style goes here
+
+*/
+.flashcard {
+    height: 140px;
+    width: 1300px;
+    box-shadow: 0 5px 10px hsl(180, 29%, 50%);
+    border-radius: 7px;
+    position: relative;
+    margin-top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: default;
+    transition: all .4 ease;
+}
+.flashcard:hover {
+    border-left: 5px solid hsl(180, 29%, 50%);
+}
+.flashcard section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flashcard .image {
+    margin: 10px;    
+}
+.flashcard .middle-info ul:not(.bottom-list) {
+    list-style: none;
+}
+.flashcard .middle-info > ul li  {
+    display: flex;
+    margin: 5px;
+    
+}
+.flashcard .top-list, .bottom-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.flashcard .company {
+    color:hsl(180, 29%, 50%);
+}
+
+.flashcard .bottom-list li {
+    color: hsl(180, 8%, 52%);
+}
+.new, .featured {
+    border-radius: 25px;
+    padding: 0 15px;
+    color: white;
+}
+.new {
+    background-color:hsl(180, 29%, 50%);
+    
+}
+.featured {
+    background-color: hsl(180, 14%, 20%);;
+}
+.position {
+    cursor: pointer;
+}
+.right-info .right-info-items {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 120px);
+    grid-template-rows: repeat(2, auto);
+}
+
+.right-info .right-info-items li {
+    padding: 5px;
+    color:hsl(180, 29%, 50%);
+    text-align: center;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.right-info .right-info-items li:hover {
+    background-color:hsl(180, 29%, 50%);
+    color: white;
+}
